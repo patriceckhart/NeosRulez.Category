@@ -1,0 +1,9 @@
+'NeosRulez.Category:Mixin.Constraints.AllConstraints':
+  abstract: true
+  constraints:
+    nodeTypes:
+      '*': false
+      'Neos.Neos:Shortcut': false
+      'Neos.NodeTypes:Page': false
+      'Neos.Neos:Document': false
+      'NeosRulez.Category:Document.Category': true

@@ -1,0 +1,20 @@
+{
+    "description": "A content filter nodetype for Neos CMS",
+    "type": "neos-package",
+    "name": "neosrulez/category",
+    "license": "GPL-3.0+",
+    "require": {
+        "neos/neos": "*",
+        "neosrulez/bootstrap": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "NeosRulez\\Category\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "NeosRulez.Category"
+        }
+    }
+}

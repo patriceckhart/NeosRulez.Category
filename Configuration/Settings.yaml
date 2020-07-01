@@ -1,0 +1,10 @@
+Neos:
+  Neos:
+    nodeTypes:
+      groups:
+        neosrulez_category:
+          position: 'end'
+          label: 'Category'
+    fusion:
+      autoInclude:
+        NeosRulez.Category: true

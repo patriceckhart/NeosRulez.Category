@@ -1,0 +1,24 @@
+'NeosRulez.Category:Content.Filter':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: 'Filter'
+    group: 'neosrulez_category'
+    icon: 'fas fa-filter'
+    inspector:
+      groups:
+        neosrulez_category_filter:
+          label: 'Filter'
+          icon: 'fas fa-filter'
+  properties:
+    selection:
+      type: references
+      ui:
+        label: 'Kategorien festlegen'
+        reloadIfChanged: true
+        showInCreationDialog: true
+        inspector:
+          group: 'neosrulez_category_filter'
+          position: 1
+          editorOptions:
+            nodeTypes: ['NeosRulez.Category:Document.Category']

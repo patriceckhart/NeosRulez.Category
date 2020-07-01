@@ -1,0 +1,13 @@
+'NeosRulez.Category:Document.Category':
+  superTypes:
+    'NeosRulez.Category:Document.GenericPage': true
+  ui:
+    label: 'Category'
+    icon: 'fas fa-tag'
+    position: 3
+    group: 'neosrulez_category'
+    inspector:
+      groups:
+        document:
+          label: 'Category'
+          icon: 'fas fa-tag'

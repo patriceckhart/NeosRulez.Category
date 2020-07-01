@@ -1,0 +1,19 @@
+prototype(NeosRulez.Category:Content.Filter) < prototype(Neos.Neos:ContentComponent) {
+    selection = Neos.Neos:MenuItems {
+        itemCollection = ${q(node).property('selection')}
+        renderHiddenInIndex = true
+    }
+    renderer = afx`
+        <NeosRulez.Category:Content.AbstractContent>
+            <div class="neosrulez_category_filter text-center">
+                <button type="button" data-filter="all" class="btn btn-primary">Alle</button>
+                <Neos.Fusion:Loop items={props.selection} item="item" itemKey="filterKey">
+                    <button @if.render={!item.subItems} type="button" class="btn btn-primary" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
+                    <Neos.Fusion:Loop @if.render={item.subItems} items={item.subItems} item="item" itemKey="filterKey">
+                        <button type="button" class="btn btn-primary" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
+                    </Neos.Fusion:Loop>
+                </Neos.Fusion:Loop>
+            </div>
+        </NeosRulez.Category:Content.AbstractContent>
+    `
+}

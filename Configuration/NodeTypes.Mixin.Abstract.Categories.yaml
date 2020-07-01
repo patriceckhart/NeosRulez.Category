@@ -1,0 +1,19 @@
+'NeosRulez.Category:Mixin.Abstract.Categories':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        neosrulez_category_filter:
+          label: 'Filter'
+          icon: 'fas fa-filter'
+  properties:
+    categories:
+      type: references
+      ui:
+        label: 'Kategorien'
+        reloadIfChanged: true
+        inspector:
+          group: 'neosrulez_category_filter'
+          position: 1
+          editorOptions:
+            nodeTypes: ['NeosRulez.Category:Document.Category']
