@@ -2,19 +2,19 @@
   superTypes:
     'Neos.Neos:Content': true
   ui:
-    label: 'Filter'
+    label: i18n
     group: 'neosrulez_category'
     icon: 'fas fa-filter'
     inspector:
       groups:
         neosrulez_category_filter:
-          label: 'Filter'
+          label: i18n
           icon: 'fas fa-filter'
   properties:
     selection:
       type: references
       ui:
-        label: 'Kategorien festlegen'
+        label: i18n
         reloadIfChanged: true
         showInCreationDialog: true
         inspector:

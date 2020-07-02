@@ -4,13 +4,13 @@
     inspector:
       groups:
         neosrulez_category_filter:
-          label: 'Filter'
+          label: i18n
           icon: 'fas fa-filter'
   properties:
     categories:
       type: references
       ui:
-        label: 'Kategorien'
+        label: i18n
         reloadIfChanged: true
         inspector:
           group: 'neosrulez_category_filter'

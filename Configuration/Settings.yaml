@@ -8,3 +8,12 @@ Neos:
     fusion:
       autoInclude:
         NeosRulez.Category: true
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.Category:
+            - 'NodeTypes/*'
+            - 'NodeTypes/Content/*'
+            - 'NodeTypes/Document/*'
+            - 'NodeTypes/Mixin/*'
+            - 'NodeTypes/Mixin/Abstract/*'
