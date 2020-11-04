@@ -11,3 +11,17 @@
         document:
           label: i18n
           icon: 'fas fa-tag'
+  properties:
+    image:
+      type: 'Neos\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'document'
+          position: 2
+          editorOptions:
+            features:
+              mediaBrowser: true
+              crop: true
+              resize: false
