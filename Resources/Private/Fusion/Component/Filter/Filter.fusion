@@ -6,11 +6,11 @@ prototype(NeosRulez.Category:Content.Filter) < prototype(Neos.Neos:ContentCompon
     renderer = afx`
         <NeosRulez.Category:Content.AbstractContent>
             <div class="neosrulez_category_filter text-center">
-                <button type="button" data-filter="all" class="btn btn-primary">Alle</button>
+                <button type="button" data-filter="all" class="btn btn-primary filter-btn">Alle</button>
                 <Neos.Fusion:Loop items={props.selection} item="item" itemKey="filterKey">
-                    <button @if.render={!item.subItems} type="button" class="btn btn-primary" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
+                    <button @if.render={!item.subItems} type="button" class="btn btn-primary filter-btn" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
                     <Neos.Fusion:Loop @if.render={item.subItems} items={item.subItems} item="item" itemKey="filterKey">
-                        <button type="button" class="btn btn-primary" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
+                        <button type="button" class="btn btn-primary filter-btn" data-filter={'.category-' + item.node.identifier}>{item.node.properties.title}</button>
                     </Neos.Fusion:Loop>
                 </Neos.Fusion:Loop>
             </div>
