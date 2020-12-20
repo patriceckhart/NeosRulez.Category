@@ -4,8 +4,7 @@
     "name": "neosrulez/category",
     "license": "GPL-3.0+",
     "require": {
-        "neos/neos": "*",
-        "neosrulez/bootstrap": "^3.3"
+        "neos/neos": "*"
     },
     "autoload": {
         "psr-4": {
