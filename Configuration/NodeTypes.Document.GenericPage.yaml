@@ -1,7 +1,7 @@
 'NeosRulez.Category:Document.GenericPage':
   abstract: true
   superTypes:
-    'Neos.Neos:Shortcut': true
+    'Neos.Neos:Document': true
     'NeosRulez.Category:Mixin.Constraints.AllConstraints': true
   properties:
     faicon:
@@ -13,25 +13,25 @@
       ui: ~
     _hiddenInIndex:
       type: boolean
-      defaultValue: TRUE
+      defaultValue: true
       ui:
         inspector:
           group: ~
     metaRobotsNoindex:
       type: boolean
-      defaultValue: TRUE
+      defaultValue: true
       ui:
         inspector:
           group: ~
     metaRobotsNofollow:
       type: boolean
-      defaultValue: TRUE
+      defaultValue: true
       ui:
         inspector:
           group: ~
     targetMode:
       type: string
-      defaultValue: FALSE
+      defaultValue: false
       ui:
         inspector:
           group: ~
