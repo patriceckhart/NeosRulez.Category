@@ -11,6 +11,9 @@
             <trans-unit id="properties.image" xml:space="preserve">
                 <source>Image</source>
             </trans-unit>
+            <trans-unit id="properties.description" xml:space="preserve">
+                <source>Description</source>
+            </trans-unit>
         </body>
     </file>
 </xliff>
