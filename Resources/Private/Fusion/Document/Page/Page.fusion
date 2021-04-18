@@ -1,16 +1,14 @@
 prototype(Neos.Neos:Page) {
-    mixItUpJs = NeosRulez.JsMinifier:JsFile
-    mixItUpJs {
-        @position = 'after NeosRulezBootstrapJs'
-        source = 'resource://NeosRulez.Category/Private/JavaScript/mixitup.js'
-        inline = FALSE
-        outputFolder = 'resource://NeosRulez.Category/Public/JavaScript/'
+    mixItUpJs = Neos.Fusion:Tag {
+        tagName = 'script'
+        src = Neos.Neos:ResourcePath {
+            path = 'resource://NeosRulez.Category/Public/JavaScript/mixitup.min.js'
+        }
     }
-    neosrulezCategoryJs = NeosRulez.JsMinifier:JsFile
-    neosrulezCategoryJs {
-        @position = 'after mixItUpJs'
-        source = 'resource://NeosRulez.Category/Private/JavaScript/scripts.js'
-        inline = FALSE
-        outputFolder = 'resource://NeosRulez.Category/Public/JavaScript/'
+    neosrulezCategoryJs = Neos.Fusion:Tag {
+        tagName = 'script'
+        src = Neos.Neos:ResourcePath {
+            path = 'resource://NeosRulez.Category/Public/JavaScript/scripts.min.js'
+        }
     }
 }
