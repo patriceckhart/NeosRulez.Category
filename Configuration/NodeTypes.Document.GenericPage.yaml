@@ -4,6 +4,8 @@
     'Neos.Neos:Document': true
     'NeosRulez.Category:Mixin.Constraints.AllConstraints': true
   properties:
+    titleOverride:
+      ui: ~
     faicon:
       ui: ~
     onlyicon:
