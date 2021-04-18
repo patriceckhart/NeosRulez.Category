@@ -1,14 +1,18 @@
 prototype(Neos.Neos:Page) {
     mixItUpJs = Neos.Fusion:Tag {
         tagName = 'script'
-        src = Neos.Neos:ResourcePath {
+        attributes.src = Neos.Fusion:ResourceUri {
             path = 'resource://NeosRulez.Category/Public/JavaScript/mixitup.min.js'
         }
+        @position = 'end'
+        @if.contentIsPresent = ${q(documentNode).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof NeosRulez.Category:Content.Filter]').is()}
     }
     neosrulezCategoryJs = Neos.Fusion:Tag {
         tagName = 'script'
-        src = Neos.Neos:ResourcePath {
+        attributes.src = Neos.Fusion:ResourceUri {
             path = 'resource://NeosRulez.Category/Public/JavaScript/scripts.min.js'
         }
+        @position = 'after mixItUpJs'
+        @if.contentIsPresent = ${q(documentNode).children('[instanceof Neos.Neos:ContentCollection]').find('[instanceof NeosRulez.Category:Content.Filter]').is()}
     }
 }
