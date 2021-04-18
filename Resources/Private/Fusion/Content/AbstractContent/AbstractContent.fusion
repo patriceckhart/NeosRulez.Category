@@ -1,1 +1,5 @@
-prototype(NeosRulez.Category:Content.AbstractContent) < prototype(Neos.Fusion:AbstractContent)
+prototype(NeosRulez.Category:Content.AbstractContent) < prototype(Neos.Fusion:Component) {
+    renderer = afx`
+        {props.content}
+    `
+}
