@@ -9,8 +9,9 @@
     onlyicon:
       ui: ~
     uriPathSegment:
-      defaultValue: ''
-      ui: ~
+      ui:
+        inspector:
+          position: after title
     _hiddenInIndex:
       type: boolean
       defaultValue: true
